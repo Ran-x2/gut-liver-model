@@ -1,0 +1,10 @@
+config/paths.local.json
+.local/
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.Rhistory
+.RData
+data/external/
+results/revision/

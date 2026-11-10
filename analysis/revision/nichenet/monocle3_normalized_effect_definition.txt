@@ -1,0 +1,10 @@
+Primary source: https://raw.githubusercontent.com/cole-trapnell-lab/monocle3/v1.3.1/R/expr_models.R
+Source version: Monocle3 v1.3.1. The historical installed package was not recovered.
+
+extract_coefficient_helper, lines 408-428, uses pseudo_count=0.01 and:
+normalized_effect = log2((linkinv(beta0 + beta) + 0.01)/(linkinv(beta0) + 0.01)).
+For the default quasipoisson log link this becomes:
+log2((exp(beta0 + beta) + 0.01)/(exp(beta0) + 0.01)).
+This is not log2(beta/intercept). Figures in this revision retain the stored field name Monocle3 normalized_effect and sign-orient it toward the indicated donor.
+
+The v1.3.1 coefficient_table implementation, lines 553-562, calls stats::p.adjust(p_value) without specifying method. R's default is Holm, although nearby comments describe Benjamini-Hochberg. Saved CSV q_value values are preserved; the available CSVs do not contain unadjusted p values or fitted objects with which to establish the original adjustment method. Avoid asserting BH/FDR specifically unless the original package/runtime or exact production path is independently verified. No DE is refitted here.

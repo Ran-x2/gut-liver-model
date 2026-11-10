@@ -1,0 +1,3 @@
+All relevant public scoring/target-link function bodies and formals are identical between official tagsv2.0.4 andv2.2.0 except classification_evaluation_continuous_pred.
+The latter difference reorganizes optional limma mean-rank and iRegulon output handling, while AUROC/AUPR/corrected-AUPR/Pearson calculations selected by predict_ligand_activities are unchanged. limma is available in this local execution environment.
+All five returned columns agree exactly on deterministic synthetic perfect/reverse/mixed-score validation. The pipeline remains explicitly pinned tov2.0.4 and does not infer which historical package was installed.

@@ -1,0 +1,7 @@
+test	passed
+supplied ligand order retained	TRUE
+AUROC agrees with independent Mann-Whitney rank statistic	TRUE
+perfect/reverse AUROC endpoints	TRUE
+perfect AUPR and prevalence-corrected AUPR	TRUE
+positive genes outside background retained; unknown background genes ignored	TRUE
+active target links restricted to observed geneset	TRUE

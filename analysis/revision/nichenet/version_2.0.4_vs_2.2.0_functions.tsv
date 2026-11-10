@@ -1,0 +1,14 @@
+function_name	identical_body	identical_formals
+predict_ligand_activities	TRUE	TRUE
+get_weighted_ligand_target_links	TRUE	TRUE
+convert_gene_list_settings_evaluation	TRUE	TRUE
+convert_settings_ligand_prediction	TRUE	TRUE
+make_new_setting_ligand_prediction_single_application	TRUE	TRUE
+get_single_ligand_importances	TRUE	TRUE
+evaluate_target_prediction	TRUE	TRUE
+evaluate_target_prediction_strict	TRUE	TRUE
+classification_evaluation_continuous_pred	FALSE	TRUE
+get_split_auroc	TRUE	TRUE
+calculate_auc_iregulon	TRUE	TRUE
+rank_desc	TRUE	TRUE
+.calcAUC	TRUE	TRUE

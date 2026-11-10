@@ -1,0 +1,7 @@
+Unmodified upstream NicheNet source functions
+Upstream project: saeyslab/nichenetr, https://github.com/saeyslab/nichenetr
+Tag: v2.0.4
+Commit: 4ae630d1890894f37d921ab33c3760ebdde95b9c
+Upstream DESCRIPTION lists Robin Browaeys as author and Chananchida Sang-aram as author/maintainer.
+License: GPL-3, as specified by the upstream DESCRIPTION; full GPL-3 text is included in LICENSE-GPL-3.txt.
+The four R source files are unmodified copies. Exact download URLs and SHA-256 checksums are provided in the accompanying official-source manifest. The local revision scripts and synthetic validation are separate from these upstream files.

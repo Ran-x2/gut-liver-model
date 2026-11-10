@@ -1,0 +1,116 @@
+current_path	proposed_path	action	notes
+DEG_R.R	analysis/scrna/04_fit_donor_de.R	move	Update paths and workflow documentation; preserve existing outputs.
+DEGs.ipynb	analysis/scrna/03_prepare_donor_de.ipynb	split_after_provenance_check	Preparation cells only; then run step04 R fitting.
+DEGs.ipynb	analysis/scrna/05_plot_donor_de.ipynb	split_after_provenance_check	Plot saved donor coefficients; no DE refit.
+LICENSE	LICENSE	keep	Preserve existing license.
+README.md	README.md	rewrite_documentation	Add workflow, prerequisites, paper citation and figure-to-script map.
+RNAseq/README.md	docs/bulk_rnaseq.md	move	Replace drive-mount-only notes with real workflow and input/output specification.
+RNAseq/STAR.sh	analysis/bulk_rnaseq/alternatives/run_star.sh	move	Alternate quantification route; establish whether used in manuscript before presenting as canonical.
+RNAseq/STAR_and_RESM.slurm	analysis/bulk_rnaseq/03_quantify_star_rsem.slurm	move	Update paths and workflow documentation; preserve existing outputs.
+RNAseq/adapter_TruSeq.fasta	references/adapters/adapter_TruSeq.fasta	move	Reference adapter resource; record source.
+RNAseq/adapter_trim_cutadapt.sh	analysis/bulk_rnaseq/02_trim_adapters.sh	move	Update paths and workflow documentation; preserve existing outputs.
+RNAseq/analysis/RNAseq_main.R	analysis/bulk_rnaseq/05_differential_expression_and_enrichment.R	move	Update paths and workflow documentation; preserve existing outputs.
+RNAseq/analysis/TPM_cibersort_mixture_prepare.R	analysis/deconvolution/01_prepare_bulk_mixtures.R	move	Update paths and workflow documentation; preserve existing outputs.
+RNAseq/analysis/To_TPM_counts.R	analysis/bulk_rnaseq/04_collect_rsem_matrices.R	consolidate_after_count_TPM_check	Identical source files; first sample col5 vs later col6. Preserve existing matrices; verify modes before consolidation.
+RNAseq/analysis/data/.Rhistory		remove_from_tracking	Interactive session history; preserve historical version in Git.
+RNAseq/analysis/data/TPM_counts_STAR_RSEM.csv	data/inputs/bulk_rnaseq/TPM_counts_STAR_RSEM.csv	move	Preserve existing input values and record source/hash.
+RNAseq/analysis/data/metadata.csv	data/inputs/bulk_rnaseq/metadata.csv	move	Preserve existing input values and record source/hash.
+RNAseq/analysis/data/raw_counts_STAR_RSEM.csv	data/inputs/bulk_rnaseq/raw_counts_STAR_RSEM.csv	move	Preserve existing input values and record source/hash.
+RNAseq/analysis/data/symbol_mappedTPM_counts.csv	data/derived/bulk_rnaseq/symbol_mappedTPM_counts.csv	move	Generated symbol-mapped matrix; retain provenance to TPM input and annotation.
+RNAseq/analysis/features_10x_2020A.tsv	references/gene_annotation/features_10x_2020A.tsv	move	Reference gene identifiers; record release/source.
+RNAseq/analysis/output_to_counts.R	analysis/bulk_rnaseq/04_collect_rsem_matrices.R	consolidate_after_count_TPM_check	Identical source files; first sample col5 vs later col6. Preserve existing matrices; verify modes before consolidation.
+RNAseq/deconvolution/get_reference_data_ours.ipynb	analysis/deconvolution/02_build_study_reference_profiles.ipynb	move	Update paths and workflow documentation; preserve existing outputs.
+RNAseq/deconvolution/get_reference_data_public.ipynb	analysis/deconvolution/02_build_public_reference_profiles.ipynb	move	Update paths and workflow documentation; preserve existing outputs.
+RNAseq/deconvolution/input_for_cibersortx/GUT_EPI_CD45pos_TPM.tsv	data/derived/deconvolution/mixtures/GUT_EPI_CD45pos_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/GUT_EPI_TPM.tsv	data/derived/deconvolution/mixtures/GUT_EPI_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/GUT_EPI_and_GUT_EPI_CD45pos_TPM.tsv	data/derived/deconvolution/mixtures/GUT_EPI_and_GUT_EPI_CD45pos_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/GUT_LP_CD45pos_TPM.tsv	data/derived/deconvolution/mixtures/GUT_LP_CD45pos_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/LIVER_CD45pos_TPM.tsv	data/derived/deconvolution/mixtures/LIVER_CD45pos_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/LIVER_HEP_TPM.tsv	data/derived/deconvolution/mixtures/LIVER_HEP_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/by_donor/D3_GUT_EPI_CD45pos_TPM.tsv	data/derived/deconvolution/mixtures/by_donor/D3_GUT_EPI_CD45pos_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/by_donor/D3_GUT_EPI_TPM.tsv	data/derived/deconvolution/mixtures/by_donor/D3_GUT_EPI_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/by_donor/D3_GUT_EPI_and_GUT_EPI_CD45pos_TPM.tsv	data/derived/deconvolution/mixtures/by_donor/D3_GUT_EPI_and_GUT_EPI_CD45pos_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/by_donor/D3_GUT_LP_CD45pos_TPM.tsv	data/derived/deconvolution/mixtures/by_donor/D3_GUT_LP_CD45pos_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/by_donor/D3_LIVER_CD45pos_TPM.tsv	data/derived/deconvolution/mixtures/by_donor/D3_LIVER_CD45pos_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/by_donor/D3_LIVER_HEP_TPM.tsv	data/derived/deconvolution/mixtures/by_donor/D3_LIVER_HEP_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/by_donor/D4_GUT_EPI_CD45pos_TPM.tsv	data/derived/deconvolution/mixtures/by_donor/D4_GUT_EPI_CD45pos_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/by_donor/D4_GUT_EPI_TPM.tsv	data/derived/deconvolution/mixtures/by_donor/D4_GUT_EPI_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/by_donor/D4_GUT_EPI_and_GUT_EPI_CD45pos_TPM.tsv	data/derived/deconvolution/mixtures/by_donor/D4_GUT_EPI_and_GUT_EPI_CD45pos_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/by_donor/D4_GUT_LP_CD45pos_TPM.tsv	data/derived/deconvolution/mixtures/by_donor/D4_GUT_LP_CD45pos_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/by_donor/D4_LIVER_CD45pos_TPM.tsv	data/derived/deconvolution/mixtures/by_donor/D4_LIVER_CD45pos_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/input_for_cibersortx/by_donor/D4_LIVER_HEP_TPM.tsv	data/derived/deconvolution/mixtures/by_donor/D4_LIVER_HEP_TPM.tsv	move	Generated CIBERSORTx mixture input, not an external reference.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_heat_epi_i_3.csv	results/deconvolution/private_by_donor/CIBERSORTx_heat_epi_i_3.csv	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_heat_epi_i_3.pdf	results/deconvolution/private_by_donor/CIBERSORTx_heat_epi_i_3.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_heat_epi_i_4.csv	results/deconvolution/private_by_donor/CIBERSORTx_heat_epi_i_4.csv	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_heat_epi_i_4.pdf	results/deconvolution/private_by_donor/CIBERSORTx_heat_epi_i_4.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_heat_l_3.csv	results/deconvolution/private_by_donor/CIBERSORTx_heat_l_3.csv	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_heat_l_3.pdf	results/deconvolution/private_by_donor/CIBERSORTx_heat_l_3.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_heat_l_4.csv	results/deconvolution/private_by_donor/CIBERSORTx_heat_l_4.csv	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_heat_l_4.pdf	results/deconvolution/private_by_donor/CIBERSORTx_heat_l_4.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_heat_lp_3.csv	results/deconvolution/private_by_donor/CIBERSORTx_heat_lp_3.csv	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_heat_lp_3.pdf	results/deconvolution/private_by_donor/CIBERSORTx_heat_lp_3.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_heat_lp_4.csv	results/deconvolution/private_by_donor/CIBERSORTx_heat_lp_4.csv	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_heat_lp_4.pdf	results/deconvolution/private_by_donor/CIBERSORTx_heat_lp_4.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_stackedChart_epi_i_3_stack.pdf	results/deconvolution/private_by_donor/CIBERSORTx_stackedChart_epi_i_3_stack.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_stackedChart_epi_i_4_stack.pdf	results/deconvolution/private_by_donor/CIBERSORTx_stackedChart_epi_i_4_stack.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_stackedChart_l_3_stack.pdf	results/deconvolution/private_by_donor/CIBERSORTx_stackedChart_l_3_stack.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_stackedChart_l_4_stack.pdf	results/deconvolution/private_by_donor/CIBERSORTx_stackedChart_l_4_stack.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_stackedChart_lp_3_stack.pdf	results/deconvolution/private_by_donor/CIBERSORTx_stackedChart_lp_3_stack.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/CIBERSORTx_stackedChart_lp_4_stack.pdf	results/deconvolution/private_by_donor/CIBERSORTx_stackedChart_lp_4_stack.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/private_by_donor/combined_results_private.pdf	results/deconvolution/private_by_donor/combined_results_private.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/public/CIBERSORTx_heat_epii.csv	results/deconvolution/public/CIBERSORTx_heat_epii.csv	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/public/CIBERSORTx_heat_epii.pdf	results/deconvolution/public/CIBERSORTx_heat_epii.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/public/CIBERSORTx_heat_l.csv	results/deconvolution/public/CIBERSORTx_heat_l.csv	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/public/CIBERSORTx_heat_l.pdf	results/deconvolution/public/CIBERSORTx_heat_l.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/public/CIBERSORTx_heat_lp.csv	results/deconvolution/public/CIBERSORTx_heat_lp.csv	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/public/CIBERSORTx_heat_lp.pdf	results/deconvolution/public/CIBERSORTx_heat_lp.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/public/CIBERSORTx_stackedChart_epii.pdf	results/deconvolution/public/CIBERSORTx_stackedChart_epii.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/public/CIBERSORTx_stackedChart_l.pdf	results/deconvolution/public/CIBERSORTx_stackedChart_l.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/public/CIBERSORTx_stackedChart_lp.pdf	results/deconvolution/public/CIBERSORTx_stackedChart_lp.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/result/public/combined_results_public.pdf	results/deconvolution/public/combined_results_public.pdf	move	Existing generated result; preserve values/figure and its source input.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/adata_epi_nonimmune_3_class_df.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/adata_epi_nonimmune_3_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/adata_epi_nonimmune_3_pb.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/adata_epi_nonimmune_3_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/adata_epi_nonimmune_4_class_df.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/adata_epi_nonimmune_4_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/adata_epi_nonimmune_4_pb.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/adata_epi_nonimmune_4_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/adata_liver_immune_3_class_df.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/adata_liver_immune_3_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/adata_liver_immune_3_pb.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/adata_liver_immune_3_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/adata_liver_immune_4_class_df.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/adata_liver_immune_4_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/adata_liver_immune_4_pb.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/adata_liver_immune_4_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/adata_lp_immune_3_class_df.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/adata_lp_immune_3_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/adata_lp_immune_3_pb.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/adata_lp_immune_3_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/adata_lp_immune_4_class_df.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/adata_lp_immune_4_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/adata_lp_immune_4_pb.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/adata_lp_immune_4_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/iel_3_class_df.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/iel_3_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/iel_3_pb.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/iel_3_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/iel_4_class_df.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/iel_4_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/iel_4_pb.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/iel_4_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/mix_3_class_df.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/mix_3_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/mix_3_pb.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/mix_3_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/mix_4_class_df.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/mix_4_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/by_donor/pb/mix_4_pb.txt	data/derived/deconvolution/reference_profiles/by_donor/pb/mix_4_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/public/pb/epi_all_class_df.txt	data/derived/deconvolution/reference_profiles/public/pb/epi_all_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/public/pb/epi_all_pb.txt	data/derived/deconvolution/reference_profiles/public/pb/epi_all_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/public/pb/epi_immune_class_df.txt	data/derived/deconvolution/reference_profiles/public/pb/epi_immune_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/public/pb/epi_immune_pb.txt	data/derived/deconvolution/reference_profiles/public/pb/epi_immune_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/public/pb/epi_nonimmune_class_df.txt	data/derived/deconvolution/reference_profiles/public/pb/epi_nonimmune_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/public/pb/epi_nonimmune_pb.txt	data/derived/deconvolution/reference_profiles/public/pb/epi_nonimmune_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/public/pb/liver_immune_class_df.txt	data/derived/deconvolution/reference_profiles/public/pb/liver_immune_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/public/pb/liver_immune_pb.txt	data/derived/deconvolution/reference_profiles/public/pb/liver_immune_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/public/pb/lp_immune_class_df.txt	data/derived/deconvolution/reference_profiles/public/pb/lp_immune_class_df.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/deconvolution/scRNA_ref/public/pb/lp_immune_pb.txt	data/derived/deconvolution/reference_profiles/public/pb/lp_immune_pb.txt	move	Generated reference profile/pseudobulk artifact; preserve study/public provenance.
+RNAseq/environment_setup.sh	analysis/bulk_rnaseq/00_prepare_environment_and_references.sh	move	Update paths and workflow documentation; preserve existing outputs.
+RNAseq/fastqc.sh	analysis/bulk_rnaseq/01_fastqc.sh	move	Update paths and workflow documentation; preserve existing outputs.
+RNAseq/salmon.sh	analysis/bulk_rnaseq/alternatives/run_salmon.sh	move	Alternate quantification route; establish whether used in manuscript before presenting as canonical.
+cellphonedb_gut.ipynb	analysis/cellphonedb/01_run_and_summarize_gut.ipynb	move	Update paths and workflow documentation; preserve existing outputs.
+cellphonedb_liver.ipynb	analysis/cellphonedb/01_run_and_summarize_liver.ipynb	move	Update paths and workflow documentation; preserve existing outputs.
+gut_chord.R	analysis/cellphonedb/02_plot_chords_gut.R	move	Update paths and workflow documentation; preserve existing outputs.
+gut_process.ipynb	analysis/scrna/01_preprocess_annotate_gut.ipynb	move	Update paths and workflow documentation; preserve existing outputs.
+gut_visualization.ipynb	analysis/scrna/02_marker_figures_gut.ipynb	move	Update paths and workflow documentation; preserve existing outputs.
+liver_chord.R	analysis/cellphonedb/02_plot_chords_liver.R	move	Update paths and workflow documentation; preserve existing outputs.
+liver_process.ipynb	analysis/scrna/01_preprocess_annotate_liver.ipynb	move	Update paths and workflow documentation; preserve existing outputs.
+liver_visualization.ipynb	analysis/scrna/02_marker_figures_liver.ipynb	move	Update paths and workflow documentation; preserve existing outputs.
+nichenet/NicheNet_preparation_step1.ipynb	analysis/nichenet/01_prepare_receiver_inputs.ipynb	move	Update paths and workflow documentation; preserve existing outputs.
+nichenet/NicheNet_visualize_step3.ipynb	analysis/nichenet/03_plot_ligand_activity_and_expression.ipynb	move	Update paths and workflow documentation; preserve existing outputs.
+nichenet/Nichenet_step2.R	analysis/nichenet/02_rank_ligands.R	move	Update paths and workflow documentation; preserve existing outputs.
+prepare_cibersort_profile_gut.ipynb	analysis/deconvolution/03_export_scrna_profiles_gut.ipynb	move	Verify relation to current reference-builder notebooks; label legacy/alternate if appropriate.
+prepare_cibersort_profile_liver.ipynb	analysis/deconvolution/03_export_scrna_profiles_liver.ipynb	move	Verify relation to current reference-builder notebooks; label legacy/alternate if appropriate.

@@ -1,0 +1,14 @@
+{
+  "output_dir": "../gut-liver-revision-output",
+  "work_dir": ".local/revision",
+  "deg_dir": "",
+  "cached_nichenet_dir": "",
+  "original_result_root": "",
+  "gut_h5ad": "",
+  "liver_h5ad": "",
+  "ligand_target_matrix": "",
+  "ligand_receptor_network": "",
+  "rscript": "Rscript",
+  "python_package_dir": "",
+  "r_library_dir": ""
+}
